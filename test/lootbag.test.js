@@ -1,9 +1,11 @@
-// 'use strict';
+'use strict';
 
-// const chai = require('chai');
+const chai = require('chai');
 // const { assert, assert: { isFunction, equal, isObject, deepEqual } } = require('chai');
-// const chaiAsPromised = require("chai-as-promised");
-// chai.use(chaiAsPromised);
+const { assert, assert: { isFunction } } = require('chai');
+const chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
+const { getToysByChild } = require('../lootbag');
 // const { 
 //   getToysByChild, 
 //   addToy, 
@@ -12,6 +14,14 @@
 //   makeChildHappy
 // } = require('../lootbag');
 
+describe("lootbag", () => {
+  // Must be able to list all toys for a given child's name.
+  describe('getToysByChild', () => {
+    it('should be a function', () => {
+      isFunction(getToysByChild);
+    });
+  });
+});
 // describe("lootbag", () => {
 //   // Must be able to list all toys for a given child's name.
 //   describe('getToysByChild', () => {
