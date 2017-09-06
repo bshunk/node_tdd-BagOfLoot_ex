@@ -31,6 +31,7 @@ module.exports.getToysByChild = (name) => {}
 //   });
 // };
 
+module.exports.addToy = (toy, kid) => {};
 // module.exports.addToy = (toy, kid) => {
 //   return new Promise( (resolve, reject) => {
 //     readFile(toyDataFile, (err, data) => {
