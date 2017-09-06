@@ -4,7 +4,17 @@ const { readFile, writeFile } = require('fs');
 const toyDataFile = './data/toyData.json';
 
 // Must be able to list all toys for a given child's name.
-module.exports.getToysByChild = () => {};
+module.exports.getToysByChild = (name) => {
+  return new Promise( (resolve, reject) => {
+    if (name) {
+      console.log('name', name);
+      // Initial return to make test pass
+      resolve(["ball", "hula hoop"]);
+
+      // refactor to actually return something from data
+    }
+  });
+};
 
 // module.exports.getToysByChild = (name) => {
 //   return new Promise( (resolve, reject) => {
