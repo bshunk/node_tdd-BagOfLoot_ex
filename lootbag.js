@@ -9,7 +9,9 @@
 const { readFile, writeFile } = require('fs');
 const toyDataFile = './data/toyData.json';
 
-module.exports.getToysByChild = (name) => {}
+module.exports.getToysByChild = (name) => {
+
+};
 // module.exports.getToysByChild = (name) => {
 //   return new Promise( (resolve, reject) => {
 //     if (name) { 
@@ -31,7 +33,9 @@ module.exports.getToysByChild = (name) => {}
 //   });
 // };
 
-module.exports.addToy = (toy, kid) => {};
+module.exports.addToy = (toy, kid) => {
+
+};
 // module.exports.addToy = (toy, kid) => {
 //   return new Promise( (resolve, reject) => {
 //     readFile(toyDataFile, (err, data) => {
@@ -58,9 +62,9 @@ module.exports.addToy = (toy, kid) => {};
 //   });
 // };
 
-// module.exports.getAllChildren = () => {
+module.exports.getAllChildren = () => {
 
-// };
+};
 
 // module.exports.removeItem = () => {
 

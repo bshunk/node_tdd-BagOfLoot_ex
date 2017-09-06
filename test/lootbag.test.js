@@ -5,11 +5,11 @@ const chai = require('chai');
 const { assert, assert: { isFunction } } = require('chai');
 const chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
-const { getToysByChild, addToy } = require('../lootbag');
+const { getToysByChild, addToy, getAllChildren } = require('../lootbag');
 // const { getToysByChild, addToy, getAllChildren, removeItem, makeChildHappy } = require('../lootbag');
 
+// Must be able to list all toys for a given child's name.
 describe("lootbag", () => {
-  // Must be able to list all toys for a given child's name.
   describe('getToysByChild', () => {
     it('should be a function', () => {
       isFunction(getToysByChild);
@@ -31,7 +31,7 @@ describe("lootbag", () => {
   //   }); //end of getToysByChild tests
 });
 
-//   // Items can be added to bag.
+// Items can be added to bag.
 describe('addToy', () => {
   it('should be a function', () => {
     isFunction(addToy);
@@ -54,6 +54,11 @@ describe('addToy', () => {
 //   });
 
 //   // Must be able to list all children who are getting a toy.
+describe('getAllChildren', () => {
+  it('should be a function', () => {
+    isFunction(getAllChildren);
+  });
+});
 //   describe('getAllChildren', () => {
 //     it('should be a function', () => {
 //       isFunction(getAllChildren);
