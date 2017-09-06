@@ -5,7 +5,7 @@ const chai = require('chai');
 const { assert, assert: { isFunction } } = require('chai');
 const chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
-const { getToysByChild, addToy, getAllChildren } = require('../lootbag');
+const { getToysByChild, addToy, getAllChildren, removeItem } = require('../lootbag');
 // const { getToysByChild, addToy, getAllChildren, removeItem, makeChildHappy } = require('../lootbag');
 
 // Must be able to list all toys for a given child's name.
@@ -53,24 +53,19 @@ describe('addToy', () => {
 //     });
 //   });
 
-//   // Must be able to list all children who are getting a toy.
+// Must be able to list all children who are getting a toy.
 describe('getAllChildren', () => {
   it('should be a function', () => {
     isFunction(getAllChildren);
   });
 });
-//   describe('getAllChildren', () => {
-//     it('should be a function', () => {
-//       isFunction(getAllChildren);
-//     });
-//   });
 
-//   // Items can be removed from bag, per child only. Removing ball from the bag should not be allowed. A child's name must be specified.
-//   describe('removeItem', () => {
-//     it('should be a function', () => {
-//       isFunction(removeItem);
-//     });
-//   });
+// Items can be removed from bag, per child only. Removing ball from the bag should not be allowed. A child's name must be specified.
+describe('removeItem', () => {
+  it('should be a function', () => {
+    isFunction(removeItem);
+  });
+});
 
 //   // Must be able to set the delivered property of a child, which defaults to false, to true.
 //   describe('makeChildHappy', () => {

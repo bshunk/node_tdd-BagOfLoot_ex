@@ -66,9 +66,9 @@ module.exports.getAllChildren = () => {
 
 };
 
-// module.exports.removeItem = () => {
+module.exports.removeItem = () => {
 
-// };
+};
 
 // module.exports.makeChildHappy = () => {
   
